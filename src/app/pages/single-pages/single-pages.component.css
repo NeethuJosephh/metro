@@ -1,0 +1,22 @@
+.body{
+  display: flex;
+  justify-content: center;
+}
+.body2{
+  display: flex;
+  justify-content: center;
+}
+
+
+.final > h2 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 25px;
+  padding: 20px 5px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e0dfdc;
+  background-color: #333;
+  letter-spacing: .2em;
+  text-shadow: 1px -1px 0 #767676;
+  margin-top: 10px;
+}

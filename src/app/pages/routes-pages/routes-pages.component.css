@@ -1,0 +1,26 @@
+caption {
+     /* font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;font-size: 25px;  
+
+    padding: 20px 5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #e0dfdc;
+    background-color: #333;
+    letter-spacing: .2em;
+    text-shadow: 1px -1px 0 #767676;
+    margin-top: 10px;
+  }
+  .mapouter {
+    position:relative;
+    text-align:right;
+    height:510px;
+    width:770px;
+}
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:510px;
+    width:770px;
+}
