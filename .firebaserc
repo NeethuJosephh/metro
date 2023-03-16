@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kochimetro-3a8c6": {
+      "hosting": {
+        "project": [
+          "kochimetro-3a8c6"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kochimetro-3a8c6"
+  }
+}

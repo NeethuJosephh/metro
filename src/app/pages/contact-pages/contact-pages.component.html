@@ -26,22 +26,22 @@
   
                   <!-- Name Input -->
                   <div class="form-floating mb-3">
-                    <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                    <input class="form-control"[(ngModel)]="name" name="upp" id="name" type="text" placeholder="Name" data-sb-validations="required" />
                     <label for="name">Name</label>
                     <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                   </div>
   
                   <!-- Email Input -->
                   <div class="form-floating mb-3">
-                    <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                    <label for="emailAddress">Email Address</label>
+                    <input class="form-control"[(ngModel)]="email" name="ooo" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required,email" />
+                    <label for="emailAddress">EmailAddress</label>
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
                     <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
                   </div>
   
                   <!-- Message Input -->
                   <div class="form-floating mb-3">
-                    <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                    <textarea class="form-control" [(ngModel)]="message" name="uo"id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
                     <label for="message">Message</label>
                     <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
                   </div>
@@ -62,7 +62,7 @@
   
                   <!-- Submit button -->
                   <div class="d-grid">
-                    <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    <button class="btn btn-primary " id="submitButton" type="submit"(click)="contact()">Submit</button>
                   </div>
                 </form>
                 <!-- End of contact form -->
@@ -78,3 +78,7 @@
   
   <!-- CDN Link to SB Forms Scripts -->
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <ul class="list-group" *ngFor="let d of details">
+    <li class="list-group-item">{{d.Name}},{{d.emailAddress}}</li>
+    
+  </ul>
