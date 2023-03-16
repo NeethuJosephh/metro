@@ -11,7 +11,7 @@ export class FireService {
   Signin(email:string,pass:string){
     signInWithEmailAndPassword(this.auth,email,pass).then(res=>{
       alert("login successfully")
-      this.router.navigate(['/'])
+      this.router.navigate(['/payment'])
     }).catch(err=>{
       alert(err)
     })
@@ -27,7 +27,7 @@ logout(){
 signup(email:string,pass:string,fname:any){
   createUserWithEmailAndPassword(this.auth,email,pass).then(res=>{
     alert("signup successfully")
-    this.router.navigate(['/'])
+    this.router.navigate(['/payment'])
   }).catch(err=>{
     alert(err)
   })

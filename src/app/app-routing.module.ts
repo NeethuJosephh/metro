@@ -12,7 +12,7 @@ import { SinglePagesComponent } from './pages/single-pages/single-pages.componen
 import { PaymentPagesComponent } from './pages/payment-pages/payment-pages.component';
 import { AboutPagesComponent } from './pages/about-pages/about-pages.component';
 import { FormPageComponent } from './pages/form-page/form-page.component';
-
+import { AngularFireAuthGuard,redirectUnauthorizedTo,redirectLoggedInTo} from '@angular/fire/compat/auth-guard';
 
 const routes: Routes = [
   {
