@@ -3,7 +3,7 @@ import { ActivatedRoute,Router } from '@angular/router';
 import { HeroService } from 'src/app/hero.service';
 import { data } from 'src/assets/data';
 
-
+import { FireService } from 'src/app/fire.service'; 
 @Component({
   selector: 'app-single-pages',
   templateUrl: './single-pages.component.html',

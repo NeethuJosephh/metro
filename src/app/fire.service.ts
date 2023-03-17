@@ -65,7 +65,7 @@ paynow(data:any){
   const paynowCollection=collection(this.fire,'paynowDetails')
 addDoc(paynowCollection,data).then(res=>{
   alert("payment successfully")
-  this.router.navigate(['/single'])
+  this.router.navigate(['/about'])
 }).catch(err=>{
   alert(err)
 })
