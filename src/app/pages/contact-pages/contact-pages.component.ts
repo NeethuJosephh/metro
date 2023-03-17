@@ -13,11 +13,11 @@ export class ContactPagesComponent {
   details:any
   
   constructor(private fireS:FireService) {}
-  ngOnInit(){
-    this.fireS.getContact().subscribe(data =>{
-      this.details =data
-    })
-  }
+  // ngOnInit(){
+  //   this.fireS.getContact().subscribe(data =>{
+  //     this.details =data
+  //   })
+  // }
 
   contact(){
     let info={
